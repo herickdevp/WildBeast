@@ -1,0 +1,28 @@
+.header-bg {
+}
+
+.header {
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 30px;
+  align-items: center;
+}
+
+.header-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+  justify-content: end;
+  gap: 10px;
+}
+
+.header-nav a {
+  display: block;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  font-weight: 1.125rem;
+  border-radius: 5px;
+  transition: 100ms;
+}
