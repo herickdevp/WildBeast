@@ -1,28 +1,32 @@
-.header-bg {
-}
-
 .header {
-  background: linear-gradient(135deg, #8844ee, #b07dfb);
   grid-area: header;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  padding: 30px;
   display: grid;
   grid-template-columns: 1fr auto;
-  padding: 30px;
   align-items: center;
 }
 
+.logo {
+  max-width: 200px;
+}
+
 .header-nav {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, auto));
-  justify-content: end;
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .header-nav a {
   display: block;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
   color: #ffffff;
-  font-weight: 1.125rem;
+  font-size: 1.125rem;
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   transition: 100ms;
+}
+
+.header-nav a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
