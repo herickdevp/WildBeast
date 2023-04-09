@@ -6,24 +6,25 @@
     "sidenav content anuncios"
     "footer footer footer";
 }
-/*
-.header {
-  grid-area: header;
+
+@media (max-width: 1200px) {
+  .estrutura {
+    grid-template-areas:
+      "header header header"
+      "sidenav content content"
+      "sidenav anuncios anuncios"
+      "footer footer footer";
+  }
 }
 
-.sidenav {
-  grid-area: sidenav;
+@media (max-width: 760px) {
+  .estrutura {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "sidenav"
+      "content"
+      "anuncios"
+      "footer";
+  }
 }
-
-.content {
-  grid-area: content;
-}
-
-.anuncios {
-  grid-area: anuncios;
-}
-
-.footer {
-  grid-area: footer;
-}
-*/
